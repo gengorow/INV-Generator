@@ -18,7 +18,7 @@ const CHATS = ["チラチラ見ている。", "仲間になりたそうにこち
     "我が子を見守るような温かい目でこちらを見ている。", "養豚場の豚を見るような目でこちらを見ている。",
     "ごちそうを見るかのような目でこちらを見ている。", "脱ぎ終わったのになかなか出てこない。"];
 
-client.on("ready", () =>  console.log("----INV Generatir is WATCHING YOU----") );
+client.on("ready", () =>  console.log("----INV Generator is WATCHING YOU----") );
 
 // 特定のメッセージを監視対象にします
 client.on("message", message => {
