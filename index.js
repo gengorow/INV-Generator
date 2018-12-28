@@ -18,15 +18,16 @@ const CHATS = ["チラチラ見ている。", "仲間になりたそうにこち
     "我が子を見守るような温かい目でこちらを見ている。", "養豚場の豚を見るような目でこちらを見ている。",
     "ごちそうを見るかのような目でこちらを見ている。", "脱ぎ終わったのになかなか出てこない。"];
 
-client.on("ready", () =>  console.log("I am ready!") );
+client.on("ready", () =>  console.log("----INV Generatir is WATCHING YOU----") );
 
 // 特定のメッセージを監視対象にします
 client.on("message", message => {
     // パーティー募集チャンネルじゃないメッセージ、Hから始まらないメッセージを除外しています
     // if (message.channel.id != CHANNEL_ID) return;
     if (!message.content.startsWith(PREFIX)) return;
-
+    
     setAwait(message);
+    console.log("a message under WATCHING");
 });
 
 /**
